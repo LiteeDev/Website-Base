@@ -10,7 +10,7 @@
 ### .htaccess and nginx rules
 
 
-```
+```console
 <IfModule mod_rewrite.c>
     Options -MultiViews
 
@@ -34,7 +34,7 @@
 ```
 
 
-``` location / {
+```console location / {
         root   /root/dir;
         index index.php index.html index.htm;
         try_files $uri $uri/ /index.php?q=$uri&$args;
