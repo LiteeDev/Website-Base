@@ -10,7 +10,8 @@
 ### .htaccess and nginx rules
 
 
-```<IfModule mod_rewrite.c>
+```
+<IfModule mod_rewrite.c>
     Options -MultiViews
 
     RewriteEngine On
