@@ -7,7 +7,7 @@
 
 
 
-### .htaccess and nginx rules
+### Apache Rule
 
 
 ```console
@@ -33,9 +33,10 @@
 </IfModule>
 ```
 
+### Nginx Rule
 
 ```console location / {
-        root   /root/dir;
-        index index.php index.html index.htm;
-        try_files $uri $uri/ /index.php?q=$uri&$args;
-	}```
+	root   /root/dir;
+	index index.php index.html index.htm;
+	try_files $uri $uri/ /index.php?q=$uri&$args;
+}```
